@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <mate name="keyword" content="cssjichu")
+    <mata name="discription" content="加油,css进一步">
+    <title>Document</title>
+    <style>
+        body{
+            color:#1a020b;
+            background-color:#a7a8bd;
+        }
+        .headtitle{
+            color:#e43779;
+            font-size:large;
+
+        }
+        .shengdanshu{
+            margin-left: 500px;
+            width:0;
+            border-width:300px;
+            border-style:solid;
+            border-color:transparent transparent #baccd9 transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1>初识css</h1>
+    <h2>样式种类</h2>
+    <div>
+        <ul>
+            <li class="headtitle">行内样式</li>
+            <p>直接在标签直接加style+相应属性与值</p>
+            <p>样式分离，不建议多使用</p>
+            <li class="headtitle">内联样式</li>
+            <p>在head中加style</p>
+            <li class="headtitle">外联样式</li>
+            <p>a.引入式  link rel="stylesheet"  herf=" " 加载头文件中单独一行</p>
+            <p>		b. 导入式，在头文件中style中第一行@import url（文件名）；</p>
+        </ul>
+    </div>
+    <h2>常见属性</h2>
+    <div>
+        <ul>
+            <li>wedth宽</li>
+            <li>height高</li>
+            <li>外边框border</li>
+            <li>边距（外边距margin和内边距padding</li>
+            <li>Background 背景</li>
+            <li>Clor 内容颜色</li>
+            <li>font字体</li>
+        </ul>
+    </div>
+    <h2>标签命名</h2>
+    <div>
+        <ul>
+            <li>id与class名理解：id，类似身份证号有且只有一个，class小名可以有多个</li>
+            <li>命名规范</li>
+                <dd>1 必须以字母开头</dd>
+                <dd>2. 最好不要单个字母的先择器出现</dd>
+                <dd>3. 不带ad，adv，adver，advertising，以免被过滤</dd>
+                <dd>4. 多个单词用连字符。不允许下划线</dd>
+                <dd>5. 全小写禁止中间夹大写</dd>
+                <dd>6. 简单明了就好 </dd>
+        </ul>
+    </div>
+    <h2>选择器</h2>
+    <div>
+        <ul>
+            <li class="NONE">1.元素选择器，例如p{}</li>
+            <li>2.class类选择器， （英文句号）.+class名字{}</li>
+            <li>3.id选择加#</li>
+            <li>4.通配符选择器，例如*{}</li>
+            <li>5.交集选择器.class名.class名，同时满足</li>
+            <li>6.并集选择器，class名字，class名字，满足一个就指向那个标签</li>
+            <li>7.后代元素选择器，长辈标签 后辈标签，中间空格，减少class命名</li>
+            <li>8.相邻兄弟选择器，+，选中最后一个前面相邻的前面有几个相邻的</li>
+            <li>9.通用兄弟选择器，div~p，除开div的所有p标签</li>
+            <li>10.子元素选择器，父元素>子元素,通过继承关系选择</li>
+        </ul>
+    </div>
+    <h3>注意选择器先级：!important>行内样式>Id>class>标签>通配符*>继承样式（7，8，9，10）
+    </h3>
+    <div class="shengdanshu"></div>
+    <div class="shengdanshua"></div>
+
+</body>
+</html>
